@@ -32,7 +32,7 @@ router.get("/trains/new", (req, res) => {
 router.get("/trains/:id/edit", (req, res) => {
   db.Train.findOne({ where: { id: req.params.id } })
     .then((singleTrain) => {
-      res.render("edit-form", singleTrain.dataValues);
+      res.render("edit-train", singleTrain.dataValues);
     })
     .catch((err) => {
       console.log(err);
