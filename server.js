@@ -2,6 +2,7 @@ const express = require("express");
 const exphbs = require("express-handlebars");
 const app = express();
 const db = require("./models");
+const TrainsController = require("./controllers/trainsController")
 
 const PORT = process.env.PORT || 8080;
 
@@ -20,6 +21,8 @@ app.get("/api/config", (req, res) => {
     success: true,
   });
 });
+
+app.use("/api/trains", TrainsController);
 
 db.sequelize
   .sync()
