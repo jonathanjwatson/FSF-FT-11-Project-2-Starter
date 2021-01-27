@@ -20,8 +20,10 @@
   },
   "homepage": "https://github.com/jonathanjwatson/FSF-FT-11-Project-2-Starter#readme",
   "dependencies": {
+    "@handlebars/allow-prototype-access": "^1.0.3",
     "express": "^4.17.1",
     "express-handlebars": "^5.2.0",
+    "handlebars": "^4.7.6",
     "mysql2": "^2.2.5",
     "sequelize": "^6.5.0"
   },
